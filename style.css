@@ -1,0 +1,107 @@
+*{
+    margin: 0px;padding: 0px;box-sizing: border-box;
+}
+body{
+    background: #30475E;
+    font-family: 'Raleway',sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 300px;
+}
+.form .form-element{
+    position: relative;
+}
+.form .form-element input{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1 px solid #888;
+    background:#f5f5f5;
+    border-radius: 15px;
+    outline: none;
+    text-indent: 10px;
+}
+.form .form-element .toggle-password{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 2px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-element .toggle-password.active i.fa-eye{
+    display: none;
+}
+.form-element .toggle-password.active i.fa-eye-slash{
+    display: inline;
+}
+.form-element .toggle-password i.fa-eye-slash{
+    display: none;
+}
+.form .form-element .password-policies{
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 0px;
+    background: #E1E1E1;
+    border-radius: 5px;
+    margin-top: 10px;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 300ms ease-in-out,
+                 opacity 300ms ease-in-out;
+    
+}
+
+.form .form-element .password-policies.active{
+    opacity: 1;
+    padding: 10px;
+    height: 180px;
+}
+.form .form-element .password-policies > div{
+    margin:  15px 10px;
+    font-weight: 600;
+    color: #888;
+    transition: all 300ms ease-in-out;
+
+}
+.form .form-element .password-policies > div.active{
+    color: #29bb89;
+}
+.form .form-element .btn{
+   background: #30475E;
+   width: 80px;
+   height: 50px;
+   position: absolute;
+   margin-left: 10px;
+   font-size: 3vmin;
+   cursor: pointer;
+   font-weight: 600;
+   opacity: 0;
+   overflow: hidden;
+}
+.form .form-element .btn.active{
+    opacity: 1;
+}
+.main_heading{
+    position: absolute;
+    display: unset;
+    top: 10%;
+    left: 40%;
+    font-weight: 700;
+    font-size: 5vmin;
+    text-shadow: 2px 2px #98b1ba;
+    word-wrap: none;
+}
